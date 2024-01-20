@@ -55,6 +55,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Начать опрос">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="M6C-8D-mwp" kind="presentation" modalPresentationStyle="fullScreen" id="CVi-un-qzg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -79,7 +82,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="4"/>
+            <point key="canvasLocation" x="-437" y="37"/>
+        </scene>
+        <!--Вопрос №-->
+        <scene sceneID="0U1-RN-7Sz">
+            <objects>
+                <viewController id="cvH-0Y-28e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xq6-vR-a3N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1I8-24-8yW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="ZdU-p0-0kO"/>
+                    <connections>
+                        <segue destination="dKY-ms-dpn" kind="show" identifier="ShowResult" id="gEs-bS-Db4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmL-VD-MpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="37"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="SQV-MS-ZGU">
+            <objects>
+                <viewController id="dKY-ms-dpn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ed6-ot-Gta">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="03d-OJ-alJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результат" id="f9s-zT-uX6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ArO-gW-XxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="37"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iXI-Sq-kXj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6C-8D-mwp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XqY-bT-hFX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cvH-0Y-28e" kind="relationship" relationship="rootViewController" id="lvj-by-fA0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zZ-tn-BiV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="37"/>
         </scene>
     </scenes>
     <resources>
