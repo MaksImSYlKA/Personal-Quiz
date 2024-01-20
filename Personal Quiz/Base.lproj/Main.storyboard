@@ -40,6 +40,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3ur-Nd-thP">
+                                <rect key="frame" x="19" y="238" width="282" height="92.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое Вы животное?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W42-qA-4Of">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXN-hY-Gk2">
+                                        <rect key="frame" x="60.5" y="52" width="161" height="40.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Начать опрос">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,10 +67,12 @@
                             <constraint firstItem="Jl4-bc-n3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DPA-Je-m7X"/>
                             <constraint firstItem="UJY-XD-mdF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Har-6P-Kbz"/>
                             <constraint firstItem="zzC-gS-yOd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jl4-bc-n3S" secondAttribute="trailing" constant="204" id="L8c-Jb-jll"/>
+                            <constraint firstItem="3ur-Nd-thP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L9h-Ag-WZT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gr4-dP-xwW" secondAttribute="trailing" constant="20" id="TM2-YG-fwa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zzC-gS-yOd" secondAttribute="bottom" constant="20" id="Wwp-hc-P6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jl4-bc-n3S" secondAttribute="bottom" constant="20" id="bI0-DW-QhM"/>
                             <constraint firstItem="Gr4-dP-xwW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wJY-1c-AsL"/>
+                            <constraint firstItem="3ur-Nd-thP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xcm-q7-tba"/>
                             <constraint firstItem="Gr4-dP-xwW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UJY-XD-mdF" secondAttribute="trailing" constant="204" id="zm7-9o-yas"/>
                         </constraints>
                     </view>
