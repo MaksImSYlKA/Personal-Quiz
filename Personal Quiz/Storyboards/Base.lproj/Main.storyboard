@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Questions View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Personal_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuestionsViewController" customModule="Personal_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,6 @@
         <!--Вопрос №-->
         <scene sceneID="0U1-RN-7Sz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kmL-VD-MpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="cvH-0Y-28e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xq6-vR-a3N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -258,13 +257,14 @@
                         <segue destination="dKY-ms-dpn" kind="show" identifier="ShowResult" id="gEs-bS-Db4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmL-VD-MpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1007" y="37"/>
         </scene>
         <!--Результат-->
         <scene sceneID="SQV-MS-ZGU">
             <objects>
-                <viewController id="dKY-ms-dpn" sceneMemberID="viewController">
+                <viewController id="dKY-ms-dpn" customClass="ResultViewController" customModule="Personal_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ed6-ot-Gta">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -308,7 +308,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6C-8D-mwp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XqY-bT-hFX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
