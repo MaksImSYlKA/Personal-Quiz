@@ -110,10 +110,35 @@
                     <view key="view" contentMode="scaleToFill" id="Ed6-ot-Gta">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Yc-Hy-jyO">
+                                <rect key="frame" x="73" y="240" width="174.5" height="88.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐙!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90l-Sg-xTV">
+                                        <rect key="frame" x="0.0" y="0.0" width="174.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wt-b0-q1w">
+                                        <rect key="frame" x="35" y="68" width="104" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="03d-OJ-alJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Yc-Hy-jyO" firstAttribute="centerY" secondItem="Ed6-ot-Gta" secondAttribute="centerY" id="5lm-b8-Vu9"/>
+                            <constraint firstItem="9Yc-Hy-jyO" firstAttribute="centerX" secondItem="Ed6-ot-Gta" secondAttribute="centerX" id="Zb4-UW-zdY"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="f9s-zT-uX6"/>
+                    <navigationItem key="navigationItem" title="Результат" id="f9s-zT-uX6">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="2lS-Vt-uCn"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ArO-gW-XxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
