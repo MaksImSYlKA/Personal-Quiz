@@ -9,6 +9,40 @@ struct Question {
     let title: String
     let type: ResponseType
     let answers: [Answer]
+    
+    func getQuestion() -> [Question] {
+        [Question(
+            title: "Какую пищу вы предпочитаете?",
+            type:  .single,
+            answers: [
+                Answer(title: "Стейк", animal: .dog),
+                Answer(title: "Рыба", animal: .cat),
+                Answer(title: "Морковь", animal: .rabbit),
+                Answer(title: "Кукуруза", animal: .turtle)
+            ]
+        ),
+         Question(
+            title: "Что вам нравится больше?",
+            type:  .multiple,
+            answers: [
+                Answer(title: "Плавать", animal: .dog),
+                Answer(title: "Спать", animal: .cat),
+                Answer(title: "Обниматься", animal: .rabbit),
+                Answer(title: "Есть", animal: .turtle)
+            ]
+         ),
+         Question(
+            title: "Любите ли вы поездки на машине?",
+            type:  .ranged,
+            answers: [
+                Answer(title: "Ненавижу", animal: .dog),
+                Answer(title: "нервничаю", animal: .cat),
+                Answer(title: "Не замечаю", animal: .rabbit),
+                Answer(title: "Обожаю", animal: .turtle)
+            ]
+         )
+        ]
+    }
 }
 
 enum ResponseType {
