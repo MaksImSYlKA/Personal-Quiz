@@ -9,8 +9,17 @@ import UIKit
 
 final class QuestionsViewController: UIViewController {
 
-    private let questions = Question.getQuestion()
+    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var questionProgressView: UIProgressView!
     
+    
+    @IBOutlet var singleStackView: UIStackView!
+    @IBOutlet var singleButtons: [UIButton]!
+    
+    @IBOutlet var multipleStackView: UIStackView!
+    
+    @IBOutlet var multipleLabels: [UILabel]!
+    private let questions = Question.getQuestion()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

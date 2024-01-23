@@ -87,7 +87,7 @@
         <!--Вопрос №-->
         <scene sceneID="0U1-RN-7Sz">
             <objects>
-                <viewController id="cvH-0Y-28e" sceneMemberID="viewController">
+                <viewController id="cvH-0Y-28e" customClass="QuestionsViewController" customModule="Personal_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xq6-vR-a3N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-wj-gNa">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-wj-gNa" userLabel="Single Stack View">
                                 <rect key="frame" x="122.5" y="191" width="75" height="186"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-i4-1VM">
@@ -245,15 +245,21 @@
                             <constraint firstItem="1I8-24-8yW" firstAttribute="trailing" secondItem="rlG-77-XZ4" secondAttribute="trailing" constant="16" id="mLX-dS-asN"/>
                             <constraint firstItem="rlG-77-XZ4" firstAttribute="centerY" secondItem="Xq6-vR-a3N" secondAttribute="centerY" id="paN-T2-DDR"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="PsY-SQ-keO"/>
-                                <exclude reference="Bk2-wj-gNa"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="ZdU-p0-0kO"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="PsY-SQ-keO" id="MEk-3Q-BmH"/>
+                        <outlet property="questionLabel" destination="C25-eM-DU4" id="JIX-AF-7rL"/>
+                        <outlet property="questionProgressView" destination="wAl-38-hk1" id="U22-Hz-jgo"/>
+                        <outlet property="singleStackView" destination="Bk2-wj-gNa" id="1zS-VO-xAA"/>
+                        <outletCollection property="singleButtons" destination="qx5-i4-1VM" collectionClass="NSMutableArray" id="OFZ-2D-qUQ"/>
+                        <outletCollection property="singleButtons" destination="LTN-iK-kcw" collectionClass="NSMutableArray" id="A8x-1v-RbG"/>
+                        <outletCollection property="singleButtons" destination="nT4-Nr-KG4" collectionClass="NSMutableArray" id="tuj-zD-T2G"/>
+                        <outletCollection property="singleButtons" destination="2Al-J2-WXc" collectionClass="NSMutableArray" id="2yW-tQ-Tyy"/>
+                        <outletCollection property="multipleLabels" destination="0WW-Nc-cFM" collectionClass="NSMutableArray" id="stf-js-j6C"/>
+                        <outletCollection property="multipleLabels" destination="VEK-9H-1R5" collectionClass="NSMutableArray" id="DTz-am-rIF"/>
+                        <outletCollection property="multipleLabels" destination="s45-OI-vRG" collectionClass="NSMutableArray" id="g02-4N-AGJ"/>
+                        <outletCollection property="multipleLabels" destination="acE-eV-Sfy" collectionClass="NSMutableArray" id="8L5-WY-Zv0"/>
                         <segue destination="dKY-ms-dpn" kind="show" identifier="ShowResult" id="gEs-bS-Db4"/>
                     </connections>
                 </viewController>
@@ -308,7 +314,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6C-8D-mwp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XqY-bT-hFX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
