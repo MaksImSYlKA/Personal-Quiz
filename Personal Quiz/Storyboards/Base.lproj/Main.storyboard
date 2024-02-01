@@ -124,12 +124,15 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-mI-dcM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-mI-dcM" userLabel="Ответить">
                                         <rect key="frame" x="0.0" y="82.5" width="288" height="38"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <buttonConfiguration key="configuration" style="plain" title="Ответить">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rangedQuestionButtonPressed" destination="cvH-0Y-28e" eventType="touchUpInside" id="w6Z-dr-QUp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -192,12 +195,15 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyr-2C-FYm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyr-2C-FYm" userLabel="Ответить">
                                         <rect key="frame" x="0.0" y="188" width="288" height="40.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <buttonConfiguration key="configuration" style="plain" title="Ответить">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="multipleQuestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpInside" id="hS4-ha-2uu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -208,6 +214,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singlequestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpInside" id="Ckn-Tj-33V"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTN-iK-kcw">
                                         <rect key="frame" x="0.0" y="50.5" width="75" height="34.5"/>
@@ -251,6 +260,9 @@
                         <outlet property="multipleStackView" destination="PsY-SQ-keO" id="MEk-3Q-BmH"/>
                         <outlet property="questionLabel" destination="C25-eM-DU4" id="JIX-AF-7rL"/>
                         <outlet property="questionProgressView" destination="wAl-38-hk1" id="U22-Hz-jgo"/>
+                        <outlet property="rangedLabels" destination="pj4-fz-DM8" id="zrW-DB-Jwh"/>
+                        <outlet property="rangedSlider" destination="YKg-eR-Q3K" id="4av-a4-dpt"/>
+                        <outlet property="rangedStackView" destination="rlG-77-XZ4" id="f7q-fn-O0K"/>
                         <outlet property="singleStackView" destination="Bk2-wj-gNa" id="1zS-VO-xAA"/>
                         <outletCollection property="singleButtons" destination="qx5-i4-1VM" collectionClass="NSMutableArray" id="OFZ-2D-qUQ"/>
                         <outletCollection property="singleButtons" destination="LTN-iK-kcw" collectionClass="NSMutableArray" id="A8x-1v-RbG"/>
@@ -260,6 +272,10 @@
                         <outletCollection property="multipleLabels" destination="VEK-9H-1R5" collectionClass="NSMutableArray" id="DTz-am-rIF"/>
                         <outletCollection property="multipleLabels" destination="s45-OI-vRG" collectionClass="NSMutableArray" id="g02-4N-AGJ"/>
                         <outletCollection property="multipleLabels" destination="acE-eV-Sfy" collectionClass="NSMutableArray" id="8L5-WY-Zv0"/>
+                        <outletCollection property="multipleSwitches" destination="UDv-iv-VPV" collectionClass="NSMutableArray" id="nYn-tS-lvn"/>
+                        <outletCollection property="multipleSwitches" destination="bHa-c4-bSh" collectionClass="NSMutableArray" id="fz0-Yb-YHi"/>
+                        <outletCollection property="multipleSwitches" destination="xvW-d0-dol" collectionClass="NSMutableArray" id="XVp-cM-QWM"/>
+                        <outletCollection property="multipleSwitches" destination="pW9-P8-Ojs" collectionClass="NSMutableArray" id="jjh-2V-F1Y"/>
                         <segue destination="dKY-ms-dpn" kind="show" identifier="ShowResult" id="gEs-bS-Db4"/>
                     </connections>
                 </viewController>
