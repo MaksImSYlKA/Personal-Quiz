@@ -19,11 +19,25 @@ final class QuestionsViewController: UIViewController {
     @IBOutlet var multipleStackView: UIStackView!
     
     @IBOutlet var multipleLabels: [UILabel]!
+    @IBOutlet var multipleSwitches: [UISwitch]!
+    
+    @IBOutlet var rangedStackView: UIStackView!
+    @IBOutlet var rangedLabels: UIStackView!
+    @IBOutlet var rangedSlider: UISlider!
+    
+    
     private let questions = Question.getQuestion()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func singlequestionButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func multipleQuestionButtonPressed() {
+    }
+    @IBAction func rangedQuestionButtonPressed() {
+    }
+    
 }
 
