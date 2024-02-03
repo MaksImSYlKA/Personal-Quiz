@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Questions View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="QuestionsViewController" customModule="Personal_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="multipleQuestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpInside" id="hS4-ha-2uu"/>
+                                            <action selector="multipleQuestionButtonPressed" destination="cvH-0Y-28e" eventType="touchUpInside" id="tts-9m-4rC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -215,23 +215,32 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <action selector="singlequestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpInside" id="Ckn-Tj-33V"/>
+                                            <action selector="singleQuestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpInside" id="Ckn-Tj-33V"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTN-iK-kcw">
                                         <rect key="frame" x="0.0" y="50.5" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleQuestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpInside" id="fR6-im-PEc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT4-Nr-KG4">
                                         <rect key="frame" x="0.0" y="101" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleQuestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpInside" id="eN5-W9-QK9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Al-J2-WXc">
                                         <rect key="frame" x="0.0" y="151.5" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleQuestionButtonPressed:" destination="cvH-0Y-28e" eventType="touchUpOutside" id="oat-hz-SeJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -260,7 +269,6 @@
                         <outlet property="multipleStackView" destination="PsY-SQ-keO" id="MEk-3Q-BmH"/>
                         <outlet property="questionLabel" destination="C25-eM-DU4" id="JIX-AF-7rL"/>
                         <outlet property="questionProgressView" destination="wAl-38-hk1" id="U22-Hz-jgo"/>
-                        <outlet property="rangedLabels" destination="pj4-fz-DM8" id="zrW-DB-Jwh"/>
                         <outlet property="rangedSlider" destination="YKg-eR-Q3K" id="4av-a4-dpt"/>
                         <outlet property="rangedStackView" destination="rlG-77-XZ4" id="f7q-fn-O0K"/>
                         <outlet property="singleStackView" destination="Bk2-wj-gNa" id="1zS-VO-xAA"/>
@@ -276,6 +284,8 @@
                         <outletCollection property="multipleSwitches" destination="bHa-c4-bSh" collectionClass="NSMutableArray" id="fz0-Yb-YHi"/>
                         <outletCollection property="multipleSwitches" destination="xvW-d0-dol" collectionClass="NSMutableArray" id="XVp-cM-QWM"/>
                         <outletCollection property="multipleSwitches" destination="pW9-P8-Ojs" collectionClass="NSMutableArray" id="jjh-2V-F1Y"/>
+                        <outletCollection property="rangedLalbels" destination="vxC-n9-EH1" collectionClass="NSMutableArray" id="7Jb-Eq-rwO"/>
+                        <outletCollection property="rangedLalbels" destination="DMb-rc-kmq" collectionClass="NSMutableArray" id="lF6-sG-aF7"/>
                         <segue destination="dKY-ms-dpn" kind="show" identifier="ShowResult" id="gEs-bS-Db4"/>
                     </connections>
                 </viewController>
